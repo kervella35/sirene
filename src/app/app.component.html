@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="jumbotron">
+  <h1>Bienvenue à {{ title }}!</h1>
+</div>
+<div>
+  <div class="form-group">
+    <label for="siren">SIREN/SIRET</label>
+    <button [disabled]="!isValidSiren() || indiceZero()" (click)="onPrevSiren($event)" class="glyphicon glyphicon-step-backward"></button> <input id="siren" type="text" maxlength="14" class="form-horizontal"
+                  size="14" [(ngModel)]="siren" placeholder="Entrez un SIREN ou un SIRET"
+                  pattern="[0-9]*"
+                  (ngModelChange)="onChange($event)" [ngStyle]="siretStyle">
+  <button [disabled]="!isValidSiren() || indiceMax()" (click)="onNextSiren($event)" class="glyphicon glyphicon-step-forward"></button>
+  </div>
+  <div id="status">{{information}}</div>
+  <div id="information">{{siretInformation}}</div>
+</div>

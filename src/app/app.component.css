@@ -1,0 +1,26 @@
+.good {
+  background-color: lightgreen;
+  color: green;
+}
+
+.bad {
+  background-color: salmon;  color: red;
+}
+
+input.siretOK {
+  background-color: lightgreen;
+  color: green;
+}
+
+input.siretKO {
+  background-color: salmon;
+  color: red;
+}
+
+.inputForm {
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+

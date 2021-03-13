@@ -184,7 +184,7 @@ export class AppComponent {
         this.siretStyle = {'background-color': 'lightgreen'};
 
         this.sirenService.getSirenInfo(this.siren)
-            .subscribe( x => this.siretInformation = x.Libelle1 + ' ' + x.Libelle2 ,
+            .subscribe( x => this.siretInformation = x.Libelle1 + ' ' + x.Libelle2,
                         error => console.log( error) );
       } else {
         this.siretStyle = {'background-color': 'salmon'};

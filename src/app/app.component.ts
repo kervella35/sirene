@@ -69,9 +69,9 @@ export class AppComponent {
         sum += (<number><any>ch) * 2 - 9;
       }
     }
-    if (sum === 0) {
+    if (sum === 0)
       return false;
-    }
+
     console.log('sum/SIREN=' + sum);
 
     return (sum % 10 === 0);
@@ -81,9 +81,8 @@ export class AppComponent {
     if (siret.length !== 14) {
       return false;
     }
-    if (!this.checkSiren(siret.substring(0, 9))) {
+    if (!this.checkSiren(siret.substring(0, 9)))
       return false;
-    }
 
     let sum = 0;
     for (let i = 0; i < siret.length; i++) {
@@ -173,7 +172,7 @@ export class AppComponent {
 
   onChange(event: any) {
 
-    console.log( event );
+    //console.log( event );
 
     if (this.siren.length === 9) {
       const isOK = this.checkSiren( this.siren );

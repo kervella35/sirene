@@ -9,7 +9,7 @@ import { SirenService } from './siren.service';
 })
 
 export class AppComponent {
-  title = 'Siren Checker 2.0 (1)';
+  title = 'Siren Checker 2.0 (2)';
   siretStyle: any;
 
   @Input()

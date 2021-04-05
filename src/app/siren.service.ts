@@ -9,7 +9,7 @@ export class SirenService {
   //baseUrl = 'http://editools.ddns.net/sirene/api/';
   //baseUrl = 'https://powertools35.freeboxos.fr/sirene/api/';
   //baseUrl = 'https://yellow-dune-089695710.azurestaticapps.net/api/sirene';
-  baseUrl = 'https://siren-api.azurewebsites.net/api/sirene';
+  const baseUrl = 'https://siren-api.azurewebsites.net/api/sirene';
 
   constructor(private http: Http) { }
 

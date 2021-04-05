@@ -215,5 +215,4 @@ export class AppComponent {
       this.siretStyle = this.noStyle;
     }
   }
-
 }
